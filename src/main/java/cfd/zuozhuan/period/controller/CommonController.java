@@ -1,5 +1,6 @@
 package cfd.zuozhuan.period.controller;
 
+import cfd.zuozhuan.period.result.R;
 import lombok.Data;
 import lombok.Getter;
 import org.springframework.web.bind.annotation.*;
@@ -14,13 +15,13 @@ import org.springframework.web.bind.annotation.*;
 public class CommonController {
 
     @GetMapping("/init")
-    public String init(@RequestParam("param") String param) {
-        return param;
+    public R<String> init(@RequestParam("param") String param) {
+        return R.success(param);
     }
 
     @PostMapping("/init")
-    public String init(@RequestBody Init init) {
-        return init.getInit();
+    public R<String> init(@RequestBody Init init) {
+        return R.success(init.getInit());
     }
 
     @Data

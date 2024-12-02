@@ -49,5 +49,5 @@ knife4j:
     license-url: https://fire100.top
     terms-of-service-url: https://fire100.top #API服务条款
 auth:
-  white_url: /login,/logout
+  white_url: /login,/logout,/common/**
   secret: E5tMjwIRQrRdXMVLAzKrQ
