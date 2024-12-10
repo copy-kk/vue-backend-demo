@@ -1,5 +1,6 @@
 package cfd.zuozhuan.period.entity.vo;
 
+import lombok.Builder;
 import lombok.Data;
 
 /**
@@ -8,8 +9,10 @@ import lombok.Data;
  * @desciption:
  */
 @Data
+@Builder
 public class LoginVo {
 
     private String name;
 
+    private String token;
 }
