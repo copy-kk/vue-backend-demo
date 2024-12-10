@@ -41,7 +41,7 @@ knife4j:
   openapi:
     title: zuozhuanapi
     description: "API文档"
-    email: 123456.com
+    email: 1234567.com
     concat: document  # 作者
     url: http://zuozhuan.cfd
     version: v1.0 # 版本号
